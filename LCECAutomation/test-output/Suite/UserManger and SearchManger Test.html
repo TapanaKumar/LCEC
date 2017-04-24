@@ -1,0 +1,404 @@
+<html>
+<head>
+<title>TestNG:  UserManger and SearchManger Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UserManger and SearchManger Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>65/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 19 17:51:25 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>383 seconds (383481 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.allPermisionSendToDataSheet()'><b>allPermisionSendToDataSheet</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript</td>
+<td></td>
+<td>90</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.UserManagerScript.backButtionTest()'><b>backButtionTest</b><br>Test class: com.lcec.automationScript.userManger.UserManagerScript</td>
+<td></td>
+<td>40</td>
+<td>com.lcec.automationScript.userManger.UserManagerScript@167fdd33</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.UserManagerScript.createNewUserTest()'><b>createNewUserTest</b><br>Test class: com.lcec.automationScript.userManger.UserManagerScript<br>Parameters: Apple17, tapanakumar, Tapana, Badhai, English , tapanakumar, EDIT_Login_name, Password, EDIT_FirstName, EDIT_LastName, EDIT_Language, VerifyPassword</td>
+<td></td>
+<td>93</td>
+<td>com.lcec.automationScript.userManger.UserManagerScript@167fdd33</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.getRestPasswordTest()'><b>getRestPasswordTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: User ID, Apple14, tapana</td>
+<td></td>
+<td>32</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Download answer guides, Download answer guides</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Bulkload Manager, Bulkload Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View all, View all</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Add new users, Add new users</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Edit user profile, Edit user profile</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Add new users and edit users, Add new users and edit users</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Deactivate & activate users, Deactivate & activate users</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Assign modules, Assign modules</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Add module credit, Add module credit</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Selectively edit users, Selectively edit users</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Change user ID, Change user ID</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Remove module credit, Remove module credit</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Merge module credit, Merge module credit</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Grant administrator permissions, Grant administrator permissions</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Bulletin Manager, Bulletin Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Manage bulletins, Manage bulletins</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Campaign Manager, Campaign Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View campaigns, View campaigns</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Edit campaigns, Edit campaigns</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View e-mail templates, View e-mail templates</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Edit e-mail templates, Edit e-mail templates</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View reports, View reports</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Edit reports, Edit reports</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View jobs, View jobs</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: NemoManagermergecampaignviewer, NemoManagermergecampaignviewer</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Edit merged campaign e-mails, Edit merged campaign e-mails</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Certification Manager, Certification Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View certification responses, View certification responses</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Export certification responses, Export certification responses</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: ContentManager, ContentManager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Export Manager, Export Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Export courses & module packages, Export courses & module packages</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: File Manager, File Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Upload files, Upload files</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Module Chain Manager, Module Chain Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: ChainManagerview, ChainManagerview</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: ChainManageredit, ChainManageredit</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Archive module chains, Archive module chains</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Module Manager, Module Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: ModuleManagerview, ModuleManagerview</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Edit modules, Edit modules</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Site Customizer, Site Customizer</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View site customizations & configurations, View site customizations & configurations</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Edit site customizations & configurations, Edit site customizations & configurations</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Publish site customizations & configurations, Publish site customizations & configurations</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: User Manager, User Manager</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View user profile, View user profile</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Add users, Add users</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Edit users, Edit users</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Merge credit, Merge credit</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Add module credit, Add module credit</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Deactivate & activate user accounts, Deactivate & activate user accounts</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Reset password, Reset password</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: E-mail reset password, E-mail reset password</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Grant administrator permissions, Grant administrator permissions</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Change User ID, Change User ID</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: Remove module credit, Remove module credit</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.grantAdministratorPermissionsTest()'><b>grantAdministratorPermissionsTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: View user history, View user history</td>
+<td></td>
+<td>0</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.UserManagerScript.loginCEC_Test()'><b>loginCEC_Test</b><br>Test class: com.lcec.automationScript.userManger.UserManagerScript</td>
+<td></td>
+<td>14</td>
+<td>com.lcec.automationScript.userManger.UserManagerScript@167fdd33</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.UserManagerScript.requiredFieldTest()'><b>requiredFieldTest</b><br>Test class: com.lcec.automationScript.userManger.UserManagerScript</td>
+<td></td>
+<td>41</td>
+<td>com.lcec.automationScript.userManger.UserManagerScript@167fdd33</td></tr>
+<tr>
+<td title='com.lcec.automationScript.userManger.SearchManagerScript.searchUserTest()'><b>searchUserTest</b><br>Test class: com.lcec.automationScript.userManger.SearchManagerScript<br>Parameters: User ID, Apple17</td>
+<td></td>
+<td>31</td>
+<td>com.lcec.automationScript.userManger.SearchManagerScript@4d95d2a2</td></tr>
+</table><p>
+</body>
+</html>

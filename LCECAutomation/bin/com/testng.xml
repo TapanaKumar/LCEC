@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--<suite name="Suite" preserve-order="true" verbose="1" parallel="none">-->
+ <suite name="Suite" verbose="1" >
+
+ <parameter name="browser" value="chrome" />
+ <parameter name="url" value="https://lcecpartner6-console.qa10.lrn.com" />
+<test name="Virtual Catalyst">
+		<classes>	
+<class name="com.vc.test.OnlineSetUPTest" />
+
+
+		</classes>
+</test>
+</suite> 
